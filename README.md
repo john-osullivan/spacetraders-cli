@@ -1,26 +1,71 @@
-# spice-traders-cli
-## A CLI client for the SpiceTraders MMORPG
+spice-traders-cli
+=================
 
-Install the CLI globally with
-`npm install -g spice-traders-cli`
+Command-Line Interface for SpiceTraders API
 
-Login to the client
-`spicetraders login`
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![Version](https://img.shields.io/npm/v/spice-traders-cli.svg)](https://npmjs.org/package/spice-traders-cli)
+[![CircleCI](https://circleci.com/gh/https://github.com/john-osullivan/spacetraders-cli.git/tree/master.svg?style=shield)](https://circleci.com/gh/https://github.com/john-osullivan/spacetraders-cli.git/tree/master)
+[![Downloads/week](https://img.shields.io/npm/dw/spice-traders-cli.svg)](https://npmjs.org/package/spice-traders-cli)
+[![License](https://img.shields.io/npm/l/spice-traders-cli.svg)](https://github.com/https://github.com/john-osullivan/spacetraders-cli.git/blob/master/package.json)
 
-If you don't have an account, the login process will create an account for you
+<!-- toc -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+# Usage
+<!-- usage -->
+```sh-session
+$ npm install -g spice-traders-cli
+$ spacetraders COMMAND
+running command...
+$ spacetraders (-v|--version|version)
+spice-traders-cli/0.5.4 linux-x64 node-v14.15.5
+$ spacetraders --help [COMMAND]
+USAGE
+  $ spacetraders COMMAND
+...
+```
+<!-- usagestop -->
+# Commands
+<!-- commands -->
+* [`spacetraders hello [FILE]`](#spacetraders-hello-file)
+* [`spacetraders help [COMMAND]`](#spacetraders-help-command)
 
-### ::Game is under active development::
+## `spacetraders hello [FILE]`
 
-#### Roadmap
-* 0.1.0  ~~Basic Auth~~
-* 0.2.0  ~~Integrate auth with the SpiceTraders Core service~~
-* 0.3.0  ~~Send basic ship commands to the backend service~~
-* 0.4.0  ~~User can listen to events dispatched from the server~~
-* 0.5.0  ~~User profile is persisted in server~~
-* 0.6.0  User can create a company and buy a ship
-* 0.7.0  User can fetch profile data and company stats
-* 0.8.0  User can view system and plot navigation course to distant planets / stations
-* 0.9.0  User can travel to different systems
-* 0.10.0  User can view, buy, and sell inventory
+describe the command here
 
-...more to come...
+```
+USAGE
+  $ spacetraders hello [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ spacetraders hello
+  hello world from ./src/hello.ts!
+```
+
+_See code: [src/commands/hello.ts](https://github.com/john-osullivan/spacetraders-cli/blob/v0.5.4/src/commands/hello.ts)_
+
+## `spacetraders help [COMMAND]`
+
+display help for spacetraders
+
+```
+USAGE
+  $ spacetraders help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+<!-- commandsstop -->
